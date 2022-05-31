@@ -14,14 +14,36 @@ body{
     color: hsl(234, 12%, 34%);
 }
 
-.container{
-    position:relative;
+@media screen and (min-width:768px){
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -80%);
+}
+.card{
+    position: relative;
+    width:22rem;
+    text-align: left;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.card{
-    width:20rem;
-    text-align: left;
-    margin-top: 25px;
+#card-left,#card-right{
+    position: relative;
+    top:120px;
+}
+#card-top,#card-bottom{
+    position: absolute;
+    left:calc(50% - 11rem);
+}
+
+#card-left{
+    left:15px;
+}
+#card-right{
+    right:15px;
+}
 }
 
 .card-title{
@@ -30,13 +52,19 @@ body{
 
 .bottom{
     width:20%;
-    margin-top:25px;
+    margin-top:10px;
     float: right;
 }
-.card-left{
-    float:inline-start;
+.row{
+    height:100%;
 }
 
-.card-right{
-    float: inline-end;
+@media only screen and (max-width:768px){
+    .card{
+        position: relative;
+        width:80%;
+    }
+    .container{
+        position: absolute;
+    }
 }
