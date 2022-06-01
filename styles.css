@@ -63,8 +63,22 @@ body{
     .card{
         position: relative;
         width:80%;
+        margin:auto;
+        margin-top:30px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     }
     .container{
         position: absolute;
+        top:10%;
     }
+    .fw-light{
+        font-weight: normal !important;
+    }
+    .col-6{
+        width:90%;
+    }
+    p{
+        text-align: left;
+    }
+    
 }
